@@ -65,7 +65,7 @@ function scripts() {
 }
 
 function images() {
-    return src('app/img/**/*.{jpg,png,svg}')
+    return src('app/img/**/*.jpg')
     .pipe(
         webp({
         quality: 70
