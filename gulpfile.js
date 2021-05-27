@@ -98,15 +98,14 @@ function sprite () {
                 maxHeight: 32
               },
               spacing: { // Add padding
-                padding: 15
+                padding: 20
               }
             },
             mode: {
-                stack : {
-                    sprite : "../icons/icons/svg",
-                    example : true
-                    }
-                },
+                css : {
+                    sprite : "../sprite/sprite",
+                    },
+                }   
             }
     ))
     .pipe(dest('app/img'));
