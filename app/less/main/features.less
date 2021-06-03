@@ -1,0 +1,28 @@
+.main-content {
+  .features {
+    background-color: @beigeBG;
+    color: @darkIndigo;
+    .features_title {
+      padding: 7.5rem 0;
+      text-align: center;
+    }
+    .features_wrapper-content {
+      padding-bottom: 7.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .content-block {
+        width: 30%;
+        &:not(:nth-child(3n)) {
+          margin-right: 2.5rem;
+        }
+        .content-block_img {
+          margin: 0 auto;
+        }
+        .content-block_text {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
