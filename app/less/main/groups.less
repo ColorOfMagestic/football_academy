@@ -1,0 +1,63 @@
+.main-content {
+  .groups {
+    background-color: @purple;
+    border-bottom: 1px solid transparent;
+    .groups_title {
+      padding: 7.5rem 0;
+      text-align: center;
+    }
+    .groups-card {
+      position: relative;
+      max-width: 56.45%;
+      border-radius: 20px;
+      background-color: @darkIndigo;
+      &:nth-child(odd) {
+        margin-left: auto;
+      }
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+      &:last-child {
+        margin-bottom: 7.5rem;
+      }
+
+      .groups-card_content {
+        max-width: 62.97%;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-bottom: 3.375rem;
+        &::after {
+          position: absolute;
+          right: 32px;
+          bottom: 24px;
+          content: "";
+          display: block;
+          width: 121px;
+          height: 121px;
+
+        }
+      }
+    }
+    .first-card {
+      background-image: url(../img/group_el_bottom.svg);
+      background-repeat: no-repeat;
+      background-position: 237px bottom;
+      .groups-card_content {
+        &::after {
+          background-image: url(../../img/baer_groups.png);
+        }
+      }
+    }
+    .second-card {
+      background-image: url(../img/group_el_top.svg);
+      background-repeat: no-repeat;
+      background-position: 24px top;
+      .groups-card_content {
+        &::after {
+          background-image: url(../../img/joy_groups.png);
+        }
+      }
+
+    }
+  }
+}
