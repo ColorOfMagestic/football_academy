@@ -1,0 +1,28 @@
+.main-content {
+  .info {
+    background-color: @blue;
+    .info-block {
+      display: flex;
+      justify-content: space-between;
+      .info-block_title {
+        position: relative;
+        padding-top: 2rem;
+        padding-left: 5rem;
+        width: 33%;
+        &::before {
+          position: absolute;
+          top: 44px;
+          left: 0;
+          content: "";
+          display: block;
+          width: 60px;
+          height: 60px;
+          background-image: url(../../img/head_groups.png);
+        }
+      }
+      .info-block_text {
+        width: 30%;
+      }
+    }
+  }
+}
