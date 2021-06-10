@@ -1,0 +1,74 @@
+.main-content {
+  .feedback {
+    background-image: url(../../img/BG_feeback.png);
+    background-size: 100%;
+    background-position-y: -8%;
+    color: @purple;
+    .feedback_title {
+      padding: 7.5rem 0;
+      text-align: center;
+    }
+    .feedback_cards-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 12.5rem;
+      .feedback_card {
+        flex-basis: 48%;
+        margin-bottom: 2.5rem;
+        padding:1.5rem 2rem;
+        background-color: @white;
+        border-radius: 20px;
+        .bd;
+        .feedback_card-text {
+          padding-bottom: 2rem;
+        }
+        .feedback_card-autor {
+          display: flex;
+          align-items: center;
+          .card-autor_img {
+            margin-right: 1.5rem;
+          }
+          .card-autor_content {
+            .autor_content-name {
+              margin: 0;
+              padding-bottom: 0.5rem;
+            }
+            .autor_content-text {
+              font-size: 1.125rem;
+              line-height: 1.125rem;
+            }
+          }
+        }
+      }
+    }
+    .feedback-slider {
+      max-height: 1019px;
+      .feedback-slider_button-prev,
+        .feedback-slider_button-next {
+          width: 80px;
+          height: 80px;
+          top: 40%;
+          background-color: @purple;
+          border-radius: 50%;
+          border: none;
+          &:hover {
+            background-color: @beige;
+          }
+        }
+        .feedback-slider_button-prev {
+          left: 40px;
+          &::after {
+            content: url(../img/hand_left_slider.svg);
+          }
+        }
+        .feedback-slider_button-next {
+          right: 40px;
+          &::after {
+            content: url(../img/hand_right_slider.svg);
+          }
+  
+        }
+    }
+  }
+}
