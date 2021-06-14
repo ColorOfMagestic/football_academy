@@ -138,7 +138,11 @@
       background-color: @darkIndigo;
       border:none;
       border-radius: 50px;
-      box-shadow: 0 3px rgba(25, 3, 51, 0.9);
+      box-shadow: 2px 5px rgba(25, 3, 51, 0.9);
+      &:active {
+        transform: translate(2px,5px);
+        box-shadow: 0 0 @green2;
+      }
       &:hover {
         cursor: pointer;
       }
