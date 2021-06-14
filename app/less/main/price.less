@@ -1,0 +1,92 @@
+.main-content {
+  .price-shcool {
+    background-image: url(../img/BG_price.png);
+    background-position: 70% 0;
+    .price-shcool_title {
+      padding: 7.5rem 0;
+      text-align: center;
+      color: @darkIndigo;
+    }
+    .price-shcool_cards-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .price-shcool_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 31.27%;
+        min-height: 470px;
+        border-radius: 40px;
+        background-color: @purple;
+        &:nth-child(2n) {
+          background-color: @beige;
+          color: @darkIndigo;
+        }
+        &:nth-child(3n) {
+          background-color: @red;
+        }
+        &:not(:last-child) {
+          margin-right: 2.5rem;
+        }
+        .price-shcool_card-title {
+          margin-top: 20px;
+          margin-bottom: 22px;
+
+        }
+        .price-shcool_card-training {
+          padding-bottom: 7rem;
+
+        }
+        .price-shcool_card-price {
+          font-family: "Circe Rounded" ;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 130%;
+        }
+      }
+    }
+    .price-shcool_button {
+      position: relative;
+      display: block;
+      min-width: 31.27%;
+      margin: 4rem auto 1.5rem;
+      padding: 0.75rem 0;
+      padding-left: 2.5rem;
+      background-color: @green;
+      color: @white;
+      font-family: 'Circe Rounded';
+      font-size: 1.5rem;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      box-shadow: 2px 5px @green2;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        left: 20%;
+        background-image: url(../img/sprite/sprite-9aaabdc7.svg);
+        background-position: -21px -21px;
+      }
+      &:active {
+        transform: translate(2px,5px);
+        box-shadow: 0 0 @green2;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .price-shcool_offer {
+      display: block;
+      min-width: 31.27%;
+      padding-bottom: 4rem;
+      text-align: center;
+      color: @green;
+    }
+  }
+}
