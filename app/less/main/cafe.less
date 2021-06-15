@@ -1,0 +1,60 @@
+.main-content {
+  .cafe {
+    position: relative;
+    background-image: url(../../img/cafe.jpg);
+    background-size: cover;
+    .cafe_title {
+      padding: 7.5rem 0 27.5rem;
+      text-align: center;
+    }
+    .cafe-slider {
+      margin:0 25rem;
+      padding-bottom: 5rem;
+      .cafe-slider-sledes {
+        .cafe-slider-slide {
+          position: relative;
+          min-height: 296px;
+          background-color: @darkIndigo;
+          border-radius: 20px;
+          .cafe-slider-slide_title {
+            padding: 3rem 3rem 0.75rem;
+          }
+          .cafe-slider-slide_text {
+            max-width: 62.97%;
+            padding-left: 3rem;
+          }
+          .cafe-slider-slide_img {
+            position: absolute;
+            right: 1.5rem;
+            bottom: 1.5rem;
+          }
+        }
+      }
+    }
+    .cafe-slider_button-prev,
+    .cafe-slider_button-next {
+      width: 80px;
+      height: 80px;
+      top: 75%;
+      background-color: @purple;
+      border-radius: 50%;
+      border: none;
+      &:hover {
+        background-color: @beige;
+      }
+    }
+    .cafe-slider_button-prev {
+      left: 40px;
+      &::after {
+        content: url(../img/hand_left_slider.svg);
+      }
+    }
+    .cafe-slider_button-next {
+      right: 40px;
+      &::after {
+        content: url(../img/hand_right_slider.svg);
+      }
+    }
+
+  }
+}
