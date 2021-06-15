@@ -1,0 +1,55 @@
+.main-content {
+  .learning {
+    background-color: @purple;
+    .learning-title {
+      padding: 7.5rem 0;
+      text-align: center;
+    }
+    .learning-wrapper {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10rem;
+      .learning_img {
+        border-radius: 20px;
+      }
+      .learning_content {
+        padding-left: 2.5rem;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        .learning_content-text {
+          padding-bottom: 2rem;
+        }
+        .learning_content-link {
+          position: relative;
+          display: block;
+          padding-left: 4rem;
+          &::before {
+            position: absolute;
+            top: -30%;
+            left: 0;
+            content: "";
+            display: block;
+            width: 48px;
+            height: 48px;
+          }
+          &:not(:last-child) {
+            padding-bottom: 1.75rem;
+          }
+          &:hover {
+            color: @beige;
+          }
+         }
+        .phone-link {
+          &::before {
+            background-image: url(../../img/tel.png);
+          }
+        }
+        .email-link {
+          &::before {
+            background-image: url(../../img/mess.png);
+          }
+        }
+      }
+    }
+  }
+}
