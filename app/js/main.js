@@ -20,5 +20,14 @@ new Swiper('.feedback-slider', {
     prevEl: '.swiper-button-prev',
   }
 });
+//Slider cafe
+new Swiper('.cafe-slider', {
+  loop: true,
+  spaceBetween: 100,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
 
 
