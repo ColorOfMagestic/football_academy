@@ -14,6 +14,7 @@ const swiper = new Swiper('.coach-slider', {
 //Slider feedback
 new Swiper('.feedback-slider', {
   loop: true,
+  autoHeight: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -31,7 +32,7 @@ new Swiper('.cafe-slider', {
 });
 //Slider photo
 new Swiper('.photo-slider', {
-  observeParents: true,
+  autoHeight: true,
 
   navigation: {
     nextEl: '.photo-slider_button-next',
