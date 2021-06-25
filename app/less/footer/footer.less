@@ -1,0 +1,133 @@
+.footer {
+  background-color: @darkIndigo;
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 3.5rem;
+    .footer_content {
+      margin-right: 3rem;
+      padding-top: 1rem;
+      .footer_content-question {
+        position: relative;
+        display: flex;
+        padding-bottom: 2.5rem;
+        &::before {
+          position: absolute;
+          top: -20%;
+          left: -4rem;
+          content: "";
+          display: block;
+          width: 48px;
+          height: 48px;
+          background-image: url(../img/quest.png);
+        }
+      .question-btn {
+          position: relative;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: inherit;
+          &::after {
+            position: absolute;
+            bottom: 0.2rem;
+            display: block;
+            content: "";
+            width: 90%;
+            height: 1px;
+            background-color: @white;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .footer_content-link {
+        display: block;
+        position: relative;
+        padding-bottom: 2.5rem;
+        &::before {
+          position: absolute;
+          left: -4rem;
+          content: "";
+          display: block;
+          width: 48px;
+          height: 48px;
+        }
+
+      }
+      .phone-link {
+        &::before {
+          top: -15%;
+          background-image: url(../img/tel.png);
+
+        }
+      }
+      .email-link {
+        &::before {
+          top: -15%;
+          background-image: url(../img/mess.png);
+
+        }
+
+      }
+      .footer_worktime {
+        position: relative;
+        padding-bottom: 2.5rem;
+        line-height: 1.25rem;
+        &::before {
+          position: absolute;
+          top: -15%;
+          left: -4rem;
+          content: "";
+          display: block;
+          width: 48px;
+          height: 48px;
+          background-image: url(../img/clock.png);
+        }
+
+      }
+      .footer_btn {
+        position: relative;
+        display: block;
+        min-width: 344px;
+        margin-left: -4rem;
+        padding: 0.75rem 0;
+        padding-left: 2.5rem;
+        background-color: @green;
+        color: @white;
+        font-family: 'Circe Rounded';
+        font-size: 1.5rem;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        box-shadow: 2px 5px @green2;
+        &::before {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 32px;
+          height: 32px;
+          left: 20%;
+          background-image: url(../img/sprite/sprite-9aaabdc7.svg);
+          background-position: -21px -21px;
+        }
+        &:active {
+          transform: translate(2px,5px);
+          box-shadow: 0 0 @green2;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+  
+      }
+    }
+  }
+  .footer_adress {
+    padding-bottom: 3.5rem;
+    text-align: center;
+    font-weight: 700;
+    .footer_adress-span {
+      color: @beige;
+    }
+  }
+}
