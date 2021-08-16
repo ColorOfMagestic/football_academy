@@ -1,14 +1,14 @@
 // --fonts--
 @font-face {
   font-family: 'Circe Rounded';
-  src:url('../../fonts/CirceRounded-Regular4.woff2') format('woff2'),
-      url('../../fonts/CirceRounded-Regular4.woff') format('woff'),
+  src:url('../fonts/CirceRounded-Regular4.woff2') format('woff2'),
+      url('../fonts/CirceRounded-Regular4.woff') format('woff'),
 }
 
 @font-face {
   font-family: 'Circe Rounded5';
-  src:url('../../fonts/CirceRounded-Regular5.woff2') format('woff2'),
-      url('../../fonts/CirceRounded-Regular5.woff') format('woff'),
+  src:url('../fonts/CirceRounded-Regular5.woff2') format('woff2'),
+      url('../fonts/CirceRounded-Regular5.woff') format('woff'),
 }
 // --/fonts--
 
@@ -70,11 +70,18 @@ h5 {
   font-size: 32px;
   line-height: 130%;
 }
+.laptop_title {
+  font-family: "Circe Rounded" ;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 100%;
+}
 // --/text--
 
 // --ColorStyle--
 @purple: #6D3EA2;
-@green: #7DCE94;
+@green: #7dce94;
 @green2: #4a815a;
 @blue: #00B0FF;
 @beige: #FFE197;
@@ -83,6 +90,7 @@ h5 {
 @white:  #ffffff;
 @grey:  #B0B0B0;
 @beigeBG:  #FFF0CB;
+@black: #000000;
 // --/ColorStyle--
 
 //--auxiliary classes--
@@ -91,8 +99,13 @@ h5 {
 @laptop: 1024px;
 @desktop: 1170px;
 
+//--vars--
+@transition: 0.4s;
+//--/vars--
+
 body {
   max-width: 1920px;
+  overflow-x: hidden;
 }
 
 
