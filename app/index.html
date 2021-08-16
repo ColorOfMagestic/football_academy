@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football academy</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football academy</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body">
   <header class="main-header">
     <div class="main-header_top-block">
       <div class="container">
-        <div class="top-block_wrapper">
+
+        <div class="top-block_logo">
           <img class="header-logo" src="./img/header_logo.png" alt="Логотип">
+        </div>
+        <div class="top-block_wrapper">
           <nav class="header-nav">
             <ul class="header-nav_list">
               <li class="header-nav_list-item">
-                <a class="header-nav_list-item-link" href="">Преимущества</a> 
+                <a class="header-nav_list-item-link" href="">Преимущества</a>
               </li>
               <li class="header-nav_list-item">
-                <a class="header-nav_list-item-link" href="">Тренеры</a> 
+                <a class="header-nav_list-item-link" href="">Тренеры</a>
               </li>
               <li class="header-nav_list-item">
-                <a class="header-nav_list-item-link" href="">Отзывы</a> 
+                <a class="header-nav_list-item-link" href="">Отзывы</a>
               </li>
               <li class="header-nav_list-item">
-                <a class="header-nav_list-item-link" href="">Стоимость</a> 
+                <a class="header-nav_list-item-link" href="">Стоимость</a>
               </li>
               <li class="header-nav_list-item">
-                <a class="header-nav_list-item-link" href="">Контакты</a> 
+                <a class="header-nav_list-item-link" href="">Контакты</a>
               </li>
             </ul>
             <button class="header-nav_btn">
-                Записаться
+              Записаться
             </button>
           </nav>
           <div class="main-header_social">
             <a class="link-tel" href="tel:+7 (812) 242 62 91">
               +7 (812) 242 62 91
             </a>
-            <a class="social_link link-vk" href=""></a>
-            <a class="social_link link-ig" href="">
-            </a>
-            <a class="social_link link-tg" href=""></a>
+            <div class="social_icon">
+              <a class="social_link link-vk" href=""></a>
+              <a class="social_link link-ig" href="">
+              </a>
+              <a class="social_link link-tg" href=""></a>
+            </div>
           </div>
         </div>
-      </div> 
+        <button class="top-block_open">
+          <span class="burger-item burger-item--top"></span>
+          <span class="burger-item burger-item--middle"></span>
+          <span class="burger-item burger-item--bottom"></span>
+        </button>
+      </div>
     </div>
     <div class="main-header_intro">
-      <div class="container">      
+      <div class="container">
         <h1 class="intro_title title">
           Футбольная школа<br>для детей от 3-х до 10 лет
         </h1>
@@ -56,7 +67,7 @@
           Наши ученики становятся звездами<br>футбола среди ровесников
         </p>
         <button class="intro_btn">
-            Записаться
+          Записаться
         </button>
       </div>
     </div>
@@ -102,39 +113,43 @@
     </section>
     <section class="groups">
       <div class="container">
-          <h2 class="groups_title title">
-            Две возрастные группы
-          </h2>
-          <div class="groups-card first-card">
-            <div class="groups-card_content">
-              <h4 class="groups-card_title">
-                3—5 лет
-              </h4>
-              <p class="groups-card_text">
-                Специалисты рекомендуют начинать заниматься футболом с 3 лет. Не все школы идут на это. У нас дети занимаются по уникальной методике, разработанной для самых маленьких.
-              </p>
-            </div>
+        <h2 class="groups_title title">
+          Две возрастные группы
+        </h2>
+        <div class="groups-card first-card">
+          <div class="groups-card_content">
+            <h4 class="groups-card_title">
+              3—5 лет
+            </h4>
+            <p class="groups-card_text">
+              Специалисты рекомендуют начинать заниматься футболом с 3 лет. Не все школы идут на это. У нас дети
+              занимаются по уникальной методике, разработанной для самых маленьких.
+            </p>
           </div>
-          <div class="groups-card second-card">
-            <div class="groups-card_content">
-              <h4 class="groups-card_title">
-                6—10 лет
-              </h4>
-              <p class="groups-card_text">
-                В группу постарше переходят как опытные ребята из младшей группы, так и те, кто только начинают занятия футболом.
-              </p>
-            </div>
-          </div>
-          
         </div>
+        <div class="groups-card second-card">
+          <div class="groups-card_content">
+            <h4 class="groups-card_title">
+              6—10 лет
+            </h4>
+            <p class="groups-card_text">
+              В группу постарше переходят как опытные ребята из младшей группы, так и те, кто только начинают занятия
+              футболом.
+            </p>
+          </div>
+        </div>
+
+      </div>
 
     </section>
     <article class="info">
       <div class="container">
         <div class="info-block">
           <h4 class="info-block_title">Внимание к детям превыше всего</h4>
-          <h5 class="info-block_text">Все наши занятия проходят в ФОЦ «Сосновка Парк», на базе которой создана школа.</h5>
-          <h5 class="info-block_text">Мы не сетевой проект и направляем внимание  только на качественную подготовку воспитанников.</h5>
+          <h5 class="info-block_text">Все наши занятия проходят в ФОЦ «Сосновка Парк», на базе которой создана школа.
+          </h5>
+          <h5 class="info-block_text">Мы не сетевой проект и направляем внимание только на качественную подготовку
+            воспитанников.</h5>
         </div>
       </div>
     </article>
@@ -156,46 +171,52 @@
                       <label class="label-tab label-tab-achieve " for="alAch">Достижения</label>
                       <label class="label-tab label-tab-education" for="alEdu">Образование</label>
                       <div class="tabs-content tabs-content-achieve-alAch">
-                      <p class="tabs-content__item-text">
-                        Диплом магистра и бакалавра физической культуры ФГБОУ ВПО «НГУ ФК, Спорта и Здоровья им. П. Ф. Лесгафта, Санкт-Петербург» профиль обучения: тренировка высококвалифицированных спортсменов в избранном виде спорта (футбол).
-                      </p>
-                      <p class="tabs-content__item-text">
-                        Семинары и Вебинары:
-                      </p>
-                      <p class="tabs-content__item-text">
-                        — Вебинар со спортивным психологом на тему «Спортивная психология дошкольников»;
-                      </p>
-                      <p class="tabs-content__item-text">
-                        — Вебинар с врачем сборной Германии "Методика оценки игрока TIPS";
-                      </p>
-                      <p class="tabs-content__item-text">
-                        — Семинары с главным тренером и создателем методик ФШ «ЮНИОР» Сергеем Герасимцом на темы : "Коммуникация между тренером и юными футболистами";
-                      </p>
-                      <p class="tabs-content__item-text">
-                        Профилактика травматзма в детском футболе и многое другое!
-                      </p>
+                        <p class="tabs-content__item-text">
+                          Диплом магистра и бакалавра физической культуры ФГБОУ ВПО «НГУ ФК, Спорта и Здоровья им. П. Ф.
+                          Лесгафта, Санкт-Петербург» профиль обучения: тренировка высококвалифицированных спортсменов в
+                          избранном виде спорта (футбол).
+                        </p>
+                        <p class="tabs-content__item-text">
+                          Семинары и Вебинары:
+                        </p>
+                        <p class="tabs-content__item-text">
+                          — Вебинар со спортивным психологом на тему «Спортивная психология дошкольников»;
+                        </p>
+                        <p class="tabs-content__item-text">
+                          — Вебинар с врачем сборной Германии "Методика оценки игрока TIPS";
+                        </p>
+                        <p class="tabs-content__item-text">
+                          — Семинары с главным тренером и создателем методик ФШ «ЮНИОР» Сергеем Герасимцом на темы :
+                          "Коммуникация между тренером и юными футболистами";
+                        </p>
+                        <p class="tabs-content__item-text">
+                          Профилактика травматзма в детском футболе и многое другое!
+                        </p>
                       </div>
                       <div class="tabs-content tabs-content-education-alEdu">
                         <p class="tabs-content__item-text">
                           Здравствуйте! Меня зовут Александр, я научу вашего ребенка профессионально владеть мячом.
                         </p>
                         <p class="tabs-content__item-text">
-                          Я тоже когда-то начал карьеру футболиста с обучения в спортивной школе. Многократно побеждал в детско-юношеских областных и городских чемпионатах.
+                          Я тоже когда-то начал карьеру футболиста с обучения в спортивной школе. Многократно побеждал в
+                          детско-юношеских областных и городских чемпионатах.
                         </p>
                         <p class="tabs-content__item-text">
-                          Играл в юниорской сборной Анжи Зеленодольск. Победил в зимнем турнире и чемпионате «Звезда Санкт-Петербург» в 2018 году.
+                          Играл в юниорской сборной Анжи Зеленодольск. Победил в зимнем турнире и чемпионате «Звезда
+                          Санкт-Петербург» в 2018 году.
                         </p>
                         <p class="tabs-content__item-text">
                           Сейчас я действующий футболист ПФК «Звезда Санкт-Петербург» с тренерской лицензией.
                         </p>
                         <p class="tabs-content__item-text">
-                          В футбольной школе я помогаю таким же ребятам, каким я был когда-то, делать шаги к своей мечте.
+                          В футбольной школе я помогаю таким же ребятам, каким я был когда-то, делать шаги к своей
+                          мечте.
                         </p>
                       </div>
-                  </div>
+                    </div>
                   </div>
                 </div>
-                <img class="coach_content_img" src="./img/coach_1.png" alt="" >
+                <img class="coach_content_img" src="./img/coach_1.png" alt="">
               </div>
             </div>
           </div>
@@ -214,25 +235,26 @@
                       <label class="label-tab label-tab-achieve" for="yaAch">Достижения</label>
                       <label class="label-tab label-tab-education" for="yaEdu">Образование</label>
                       <div class="tabs-content tabs-content-achieve-yaAch">
-                      <p class="tabs-content__item-text">
-                        За 5 лет провел более 1 000 индивидуальныхи 2 000 групповых тренировок.
-                      </p>
-                      <p class="tabs-content__item-text">
-                        Прошёл подготовку по специальностям «Профилактикатравматизма в детском футболе» и «Спортивная психология дошкольников».
-                      </p>
+                        <p class="tabs-content__item-text">
+                          За 5 лет провел более 1 000 индивидуальныхи 2 000 групповых тренировок.
+                        </p>
+                        <p class="tabs-content__item-text">
+                          Прошёл подготовку по специальностям «Профилактикатравматизма в детском футболе» и «Спортивная
+                          психология дошкольников».
+                        </p>
                       </div>
                       <div class="tabs-content tabs-content-education-yaEdu">
                         <p class="tabs-content__item-text">
-                          Воспитанник СДЮСШОР Локомотив. 
+                          Воспитанник СДЮСШОР Локомотив.
                         </p>
                         <p class="tabs-content__item-text">
                           Многократный призер и победитель городских, всероссийских и международных турниров.
                         </p>
                       </div>
-                  </div>
+                    </div>
                   </div>
                 </div>
-                <img class="coach_content_img" src="./img/coach_2.png" alt="" >
+                <img class="coach_content_img" src="./img/coach_2.png" alt="">
               </div>
             </div>
           </div>
@@ -271,7 +293,7 @@
               есть кафе.
             </p>
             <div class="feedback_card-autor">
-              <img class="card-autor_img" src="./img/mom_1_feedback.png" alt="" >
+              <img class="card-autor_img" src="./img/mom_1_feedback.png" alt="">
               <div class="card-autor_content">
                 <h5 class="autor_content-name">Ольга Фролова</h5>
                 <p class="autor_content-text">Мама Саши,<br>пятилетнего футболиста</p>
@@ -280,10 +302,11 @@
           </div>
           <div class="feedback_card">
             <p class="feedback_card-text">
-              Спасибо большое, за терпение и труд для наших детей, Темушка очень доволен и не оставит футбол, футбол для него все! С благодарностью, Ольга! 
+              Спасибо большое, за терпение и труд для наших детей, Темушка очень доволен и не оставит футбол, футбол для
+              него все! С благодарностью, Ольга!
             </p>
             <div class="feedback_card-autor">
-              <img class="card-autor_img" src="./img/mom_2_feedback.png" alt="" >
+              <img class="card-autor_img" src="./img/mom_2_feedback.png" alt="">
               <div class="card-autor_content">
                 <h5 class="autor_content-name">Ольга Петрова</h5>
                 <p class="autor_content-text">Мама Жени,<br>трёхлетнего футболиста</p>
@@ -292,10 +315,12 @@
           </div>
           <div class="feedback_card">
             <p class="feedback_card-text">
-              ОГРОМНОЕ СПАСИБО!!!Как же Эмиль стал играть!!Совсем недавно он и пнуть мяч не мог, а теперь как обводит, как бежит с мячом!!И ему стало интересно играть, он стал стараться!Я лично в восторге!Спасибо, что вы есть!!
+              ОГРОМНОЕ СПАСИБО!!!Как же Эмиль стал играть!!Совсем недавно он и пнуть мяч не мог, а теперь как обводит,
+              как бежит с мячом!!И ему стало интересно играть, он стал стараться!Я лично в восторге!Спасибо, что вы
+              есть!!
             </p>
             <div class="feedback_card-autor">
-              <img class="card-autor_img" src="./img/dad_1_feedback.png" alt="" >
+              <img class="card-autor_img" src="./img/dad_1_feedback.png" alt="">
               <div class="card-autor_content">
                 <h5 class="autor_content-name">Никита Хрусталёв</h5>
                 <p class="autor_content-text">Папа Дениса,<br>шестилетнего футболиста</p>
@@ -304,10 +329,11 @@
           </div>
           <div class="feedback_card">
             <p class="feedback_card-text">
-              Добрый вечер. В футбольную школу ходим уже больше года. Сыну 4,5 года. Пришли нам было больше 3х лет. Тренера очень хорошие. В каждой возрастной группе по два тренера.
+              Добрый вечер. В футбольную школу ходим уже больше года. Сыну 4,5 года. Пришли нам было больше 3х лет.
+              Тренера очень хорошие. В каждой возрастной группе по два тренера.
             </p>
             <div class="feedback_card-autor">
-              <img class="card-autor_img" src="./img/dad_2_feedback.png" alt="" >
+              <img class="card-autor_img" src="./img/dad_2_feedback.png" alt="">
               <div class="card-autor_content">
                 <h5 class="autor_content-name">Сергей Иванов</h5>
                 <p class="autor_content-text">Папа Димы,<br>девятилетнего футболиста</p>
@@ -316,21 +342,21 @@
           </div>
         </div>
       </div>
-     <div class="feedback-slider swiper-container">
-       <div class="feedback-slider_slides swiper-wrapper">
-         <div class="feedback-slider_slide swiper-slide">
-           <img class="feedback-slider_slide-img" src="./img/feedback_slider_img.jpg" alt="" >
-         </div>
-         <div class="feedback-slider_slide swiper-slide">
-           <img class="feedback-slider_slide-img" src="./img/BG_form.jpg" alt="" >
-         </div>
-         <div class="feedback-slider_slide swiper-slide">
-           <img class="feedback-slider_slide-img" src="./img/photos_trn.jpg" alt="" >
-         </div>
-       </div>
-       <button class="feedback-slider_button-prev swiper-button-prev"></button>
+      <div class="feedback-slider swiper-container">
+        <div class="feedback-slider_slides swiper-wrapper">
+          <div class="feedback-slider_slide swiper-slide">
+            <img class="feedback-slider_slide-img" src="./img/feedback_slider_img.jpg" alt="">
+          </div>
+          <div class="feedback-slider_slide swiper-slide">
+            <img class="feedback-slider_slide-img" src="./img/BG_form.jpg" alt="">
+          </div>
+          <div class="feedback-slider_slide swiper-slide">
+            <img class="feedback-slider_slide-img" src="./img/photos_trn.jpg" alt="">
+          </div>
+        </div>
+        <button class="feedback-slider_button-prev swiper-button-prev"></button>
         <button class="feedback-slider_button-next swiper-button-next"></button>
-     </div>
+      </div>
     </section>
     <section class="price-shcool">
       <div class="container">
@@ -339,85 +365,87 @@
         </h2>
         <div class="price-shcool_cards-wrapper">
           <div class="price-shcool_card">
-            <img class="price-shcool_card-img" src="./img/cat_price.png" alt="" >
+            <img class="price-shcool_card-img" src="./img/cat_price.png" alt="">
             <h5 class="price-shcool_card-title">Разовое занятие</h5>
             <span class="price-shcool_card-training">1 тренировка</span>
             <span class="price-shcool_card-price">700 рублей</span>
           </div>
           <div class="price-shcool_card">
-            <img class="price-shcool_card-img" src="./img/tiger_price.png" alt="" >
+            <img class="price-shcool_card-img" src="./img/tiger_price.png" alt="">
             <h5 class="price-shcool_card-title">Начальный</h5>
             <span class="price-shcool_card-training">4 тренировки в месяц</span>
             <span class="price-shcool_card-price">2600 рублей</span>
           </div>
           <div class="price-shcool_card">
-            <img class="price-shcool_card-img" src="./img/leo_price.png" alt="" >
+            <img class="price-shcool_card-img" src="./img/leo_price.png" alt="">
             <h5 class="price-shcool_card-title">Оптимальный</h5>
             <span class="price-shcool_card-training">8 тренировок в месяц</span>
             <span class="price-shcool_card-price">4800 рублей</span>
           </div>
-      </div>
-      <button class="price-shcool_button"> Попробовать</button>
-      <span class="price-shcool_offer">Первое занятие бесплатно</span>
+        </div>
+        <button class="price-shcool_button"> Попробовать</button>
+        <span class="price-shcool_offer">Первое занятие бесплатно</span>
 
     </section>
     <section class="cafe">
-        <h2 class="cafe_title">
-          Уютное спортивное кафе PINECafe
-        </h2>
-        <div class="cafe-slider swiper-container">
-          <div class="cafe-slider-sledes swiper-wrapper">
-            <div class="cafe-slider-slide swiper-slide">
-              <h4 class="cafe-slider-slide_title">
-                Проведение праздников
-              </h4>
-              <p class="cafe-slider-slide_text">
-                Ну и конечно можно провести любой ваш праздник в кафе или на открытой площадке барбекю. Мы организуем лучший фуршет или банкет.
-              </p>
-              <img class="cafe-slider-slide_img" src="./img/cafe_hlop.png" alt="">
-            </div>
-            <div class="cafe-slider-slide swiper-slide">
-              <h4 class="cafe-slider-slide_title">
-                Вкусная еда
-              </h4>
-              <p class="cafe-slider-slide_text">
-                Здесь вы сможете выпить кофе, молочный коктейль или свежевыжатый сок. Сделайте заказ перед тренировкой ко времени ее окончания. 
-              </p>
-              <img class="cafe-slider-slide_img" src="./img/dinner_cafe.png" alt="">
-            </div>
-            <div class="cafe-slider-slide swiper-slide">
-              <h4 class="cafe-slider-slide_title">
-                На большом экране
-              </h4>
-              <p class="cafe-slider-slide_text">
-                В нашем кафе транслируются самые лучшие спортивные события на огромном экране.
-                Забронируйте зал для индивидуального просмотра фильмов.
-              </p>
-              <img class="cafe-slider-slide_img" src="./img/cafe_tv.png" alt="">
-            </div>
+      <h2 class="cafe_title">
+        Уютное спортивное кафе PINECafe
+      </h2>
+      <div class="cafe-slider swiper-container">
+        <div class="cafe-slider-sledes swiper-wrapper">
+          <div class="cafe-slider-slide swiper-slide">
+            <h4 class="cafe-slider-slide_title">
+              Проведение праздников
+            </h4>
+            <p class="cafe-slider-slide_text">
+              Ну и конечно можно провести любой ваш праздник в кафе или на открытой площадке барбекю. Мы организуем
+              лучший фуршет или банкет.
+            </p>
+            <img class="cafe-slider-slide_img" src="./img/cafe_hlop.png" alt="">
+          </div>
+          <div class="cafe-slider-slide swiper-slide">
+            <h4 class="cafe-slider-slide_title">
+              Вкусная еда
+            </h4>
+            <p class="cafe-slider-slide_text">
+              Здесь вы сможете выпить кофе, молочный коктейль или свежевыжатый сок. Сделайте заказ перед тренировкой ко
+              времени ее окончания.
+            </p>
+            <img class="cafe-slider-slide_img" src="./img/dinner_cafe.png" alt="">
+          </div>
+          <div class="cafe-slider-slide swiper-slide">
+            <h4 class="cafe-slider-slide_title">
+              На большом экране
+            </h4>
+            <p class="cafe-slider-slide_text">
+              В нашем кафе транслируются самые лучшие спортивные события на огромном экране.
+              Забронируйте зал для индивидуального просмотра фильмов.
+            </p>
+            <img class="cafe-slider-slide_img" src="./img/cafe_tv.png" alt="">
           </div>
         </div>
-        <button class="cafe-slider_button-prev swiper-button-prev"></button>
-          <button class="cafe-slider_button-next swiper-button-next"></button>
+      </div>
+      <button class="cafe-slider_button-prev swiper-button-prev"></button>
+      <button class="cafe-slider_button-next swiper-button-next"></button>
     </section>
     <div class="photo-slider  swiper-container">
       <div class="photo-slider-slides swiper-wrapper">
         <div class="photo-slider-slide swiper-slide">
           <div class="photo-slider-slide_content">
             <h2 class="photo-slider-slide_content-title">Фото<br> занятий</h2>
-            <img class="photo-slider-slide_img" src="./img/photos_trn.jpg" alt="" >
+            <img class="photo-slider-slide_img" src="./img/photos_trn.jpg" alt="">
           </div>
         </div>
         <div class="photo-slider-slide swiper-slide">
           <div class="photo-slider-slide_content">
             <h2 class="photo-slider-slide_content-title">Фото<br> занятий</h2>
-            <img class="photo-slider-slide_img" src="./img/BG_intro.jpg" alt="" >
+            <img class="photo-slider-slide_img" src="./img/BG_intro.jpg" alt="">
           </div>
         </div>
         <div class="photo-slider-slide swiper-slide">
           <div class="photo-slider-slide_content">
             <h2 class="photo-slider-slide_content-title">Фото<br> занятий</h2>
-            <img class="photo-slider-slide_img" src="./img/BG_form.jpg" alt="" >
+            <img class="photo-slider-slide_img" src="./img/BG_form.jpg" alt="">
           </div>
         </div>
       </div>
@@ -433,7 +461,8 @@
           <img class="learning_img" src="./img/less_for_us.jpg" alt="">
           <div class="learning_content">
             <p class="learning_content-text">
-              Мы уделяем внимание всем детям и особенно новичкам. Помогаем детям адаптироваться в команде, раскрепоститься и получать удовольствие от тренировок и игр.
+              Мы уделяем внимание всем детям и особенно новичкам. Помогаем детям адаптироваться в команде,
+              раскрепоститься и получать удовольствие от тренировок и игр.
             </p>
             <a class="learning_content-link phone-link" href="tel:+7 (812) 242 62 91">+7 (812) 242 62 91</a>
             <a class="learning_content-link email-link" href="mailto:info@parksosnovka.ru
@@ -459,18 +488,115 @@
           ">info@parksosnovka.ru
           </a>
           <p class="footer_worktime">
-          Занятия по вт. и чт.<br>с 16:00 до 17:00
+            Занятия по вт. и чт.<br>с 16:00 до 17:00
           </p>
           <button class="footer_btn"> <span class="footer_btn-span">Записаться</span></button>
         </div>
         <img class="map" src="./img/map.png" alt="">
       </div>
-      <p class="footer_adress">2020 «Парк Сосновка» — <span class="footer_adress-span">СПб, ул. Жака Дюкло 20</span> 
+      <p class="footer_adress">2020 «Парк Сосновка» — <span class="footer_adress-span">СПб, ул. Жака Дюкло 20</span>
       </p>
     </div>
   </footer>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
+  <div class="modal" id="modal_one-training">
+    <div class="modal_wrapper">
+      <div class="modal_body">
+        <button class="modal_close"></button>
+        <div class="modal_content">
+          <h3 class="modal_content-title">Запись на разовое занятие</h3>
+          <p class="modal_content-text">Проходят по вторникам и четвергам с 16:00 до 17:00</p>
+          <form class="modal_form">
+            <label class="form_label">
+              <input type="text" class="form_input" placeholder="Ваше имя" maxlength="20">
+            </label>
+            <label class="form_label">
+              <input type="tel" class="form_input" placeholder="Телефон" maxlength="13">
+            </label>
+            <label class="form_label">
+              <div class="select-wrapper">
+                <select name="age" class="form_select">
+                  <option value="" class="select_option title-option">
+                    Возраст ребенка
+                  </option>
+                  <option value="" class="select_option">
+                    3 года
+                  </option>
+                  <option value="" class="select_option">
+                    4 года
+                  </option>
+                  <option value="" class="select_option">
+                    5 лет
+                  </option>
+                  <option value="" class="select_option">
+                    6 лет
+                  </option>
+                  <option value="" class="select_option">
+                    7 лет
+                  </option>
+                </select>
+              </div>
+            </label>
+            <label class="form_label">
+              <input type="tel" maxlength="10" class="form_input" placeholder="Дата занятия">
+            </label>
+          </form>
+          <button class="modal_form-submit" type="submit">Записаться</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal_wrapper-shipped">
+      <div class="modal_body">
+        <button class="modal_close-shipped"></button>
+        <div class="modal_content">
+          <h3 class="modal_content-title">
+            Лучшее решение за сегодня!
+          </h3>
+          <img class="modal_content-image" src="./img/finger_up_modal.png" alt="">
+          <p class="modal_content-text">
+            Заявка уже улетела нам <br> на почту, скоро позвоним!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal_question">
+    <div class="modal_wrapper">
+      <div class="modal_body">
+        <button class="modal_close"></button>
+        <div class="modal_content">
+          <h3 class="modal_content-title">Вопрос</h3>
+          <form class="modal_form">
+            <label class="form_label">
+              <input type="text" class="form_input" placeholder="Ваше имя" maxlength="20">
+            </label>
+            <label class="form_label">
+              <input type="tel" class="form_input" placeholder="Телефон" maxlength="13">
+            </label>
+            <textarea class="textarea-question" cols="10" rows="8"></textarea>
+          </form>
+          <button class="modal_form-submit" type="submit">Задать вопрос</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal_wrapper-shipped">
+      <div class="modal_body">
+        <button class="modal_close-shipped"></button>
+        <div class="modal_content">
+          <h3 class="modal_content-title">
+            Уже решаем ваш вопрос
+          </h3>
+          <img class="modal_content-image" src="./img/modal_ok.png" alt="">
+          <p class="modal_content-text">
+            Обычно в рабочее время отвечаем за час
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
-</body>
+  </body>
+
 </html>
