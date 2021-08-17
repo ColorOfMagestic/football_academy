@@ -34,8 +34,24 @@
         .laptop_title;
       }
       .features_wrapper-content{
-        padding-bottom: 7.5rem;
+        padding-bottom: 2.5rem;
+        .content-block{
+          width: 40%;
+          margin-bottom: 1rem;
+          &:not(:nth-child(3n)) {
+            margin-right: 0;
+          }
+  
 
+          .content-block_img{
+            display: block;
+            max-width: 40%;
+          }
+          .content-block_text{
+            font-size: 1rem;
+            line-height: 1rem;
+          }
+        }
       }
     }
   }
