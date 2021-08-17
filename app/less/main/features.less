@@ -56,3 +56,33 @@
     }
   }
 }
+@media (min-width: @mobile) and (max-width: @tablet) {
+  .main-content {
+    .features{
+      .features_title{
+        padding: 2.5rem 0;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 130%;
+      }
+      .features_wrapper-content{
+        padding-bottom: 1.5rem;
+        .content-block{
+          width: 100%;
+          margin-bottom: 2rem;
+          &:not(:nth-child(3n)) {
+            margin-right: 0;
+          }
+          
+          
+          .content-block_text{
+            padding:0 3rem;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+}
