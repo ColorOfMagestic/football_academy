@@ -82,3 +82,65 @@
   }
   
 }
+@media (min-width: @mobile) and (max-width: @tablet) {
+  .main-content {
+    .groups {
+      .groups_title {
+        padding: 2.5rem 0;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 130%
+      }
+      .groups-card {
+        max-width: 80%;
+        margin: 0 auto;
+        &:last-child {
+          margin-bottom: 2.5rem;
+        }
+        .groups-card_content{
+          max-width: 80%;
+          padding-top: 1.5rem;
+          padding-left: 1.5rem;
+          padding-bottom: 2.5rem;
+  
+          .groups-card_title{
+            font-size: 1.5rem;
+          }
+          .groups-card_text{
+            display: block;
+            width: 95%;
+            font-size: 1rem;
+            line-height: 100%;
+
+          }
+        }
+  
+      }
+      .first-card {
+        background-image: none;
+        .groups-card_content {
+          &::after {
+            background-image: url(../../img/baer_groups.png);
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+          }
+        }
+
+      }
+      .second-card {
+        background-image: none;
+        .groups-card_content {
+          &::after {
+            background-image: url(../../img/joy_groups.png);
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+          }
+        }
+  
+      }
+    }
+  }
+
+}
