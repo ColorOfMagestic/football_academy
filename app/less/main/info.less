@@ -49,5 +49,42 @@
       }
     }
   }
-  
+}
+@media (min-width: @mobile) and (max-width: @tablet) {
+    .main-content {
+    .info {
+      .info-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .info-block_title {
+          width: 100%;
+          font-size: 1.5rem;
+          text-align: center;
+          padding: 0 1.5rem;
+          padding-top: 3.5rem;
+          &::before {
+            top: 15%;
+            left: 45%;
+            background-size: 70%;
+            background-repeat: no-repeat;
+          }
+        }
+        .info-block_text {
+          width: 100%;
+          margin-top: 2rem;
+          margin-bottom: 0;
+          padding: 0 1.5rem;
+          font-size: 1rem;
+          line-height: 1.2rem;
+          text-align: center;
+          &:last-child{
+            padding-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+
 }
