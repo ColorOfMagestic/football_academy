@@ -1,5 +1,6 @@
 .main-content {
   .coach {
+    position: relative;
     background-color: @beigeBG;
     color: @darkIndigo;
     background-image: url(../img/coach_bg_circle.png);
@@ -58,13 +59,13 @@
                   }
                   .label-tab-achieve {
                     &::before {
-                      background-image: url(../../img/sprite/sprite-9aaabdc7.svg);
+                      background-image: url(../img/sprite/sprite-9aaabdc7.svg);
                       background-position: 60% 56%;
                     }
                   }
                   .label-tab-education {
                     &::before {
-                      background-image: url(../../img/sprite/sprite-9aaabdc7.svg);
+                      background-image: url(../img/sprite/sprite-9aaabdc7.svg);
                       background-position: 34% 54%;
                     }
                   }
@@ -123,4 +124,70 @@
       }
     }
   }
+}
+
+@media (min-width: @mobile) and (max-width: @tablet) {
+  .main-content {
+    .coach {
+      .coach-slider {
+        .coach-slider_slides {
+          .coach-slider_slide {
+            .coach_title {
+              .mobile_title();
+            }
+            .coach_content-wrapper {
+              flex-direction: column;
+              padding-bottom: 2.5rem;
+              .coach_content {
+                order: 2;
+                .coach_content-name {
+                  margin: 0.6rem 0;
+                  font-size: 1.5rem;
+                  text-align: center;
+                }
+                .tabs-wrapper {
+                  .tabs {
+                    justify-content: center;
+                    .label-tab {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      max-width: 45%;
+                      margin-top: 1rem;
+                      margin-bottom: 1.5rem;
+                      padding-left: 2.35rem;
+                      font-size: 1rem;
+                      &::before {
+                        top: 20%;
+                        left: 4%;
+                      }
+                    }
+                    .tabs-content {
+                      width: 100%;
+                      padding: 0 1.5rem;
+                      display: none;
+                      .tabs-content__item-text {
+                        font-size: 1rem;
+                        line-height: 120%;
+                      }
+                    }
+                  }
+                }
+              }
+              .coach_content_img {
+                width: 50%;
+                margin: 0 auto;
+              }
+            }
+        
+          }
+        }
+        .coach-slider_button-prev,
+        .coach-slider_button-next {
+          display: none;
+        }
+      }
+    }
+  }
+  
 }
