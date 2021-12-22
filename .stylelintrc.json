@@ -4,7 +4,7 @@
         "stylelint-config-recess-order"
     ],
     "rules": {
-        "indentation": 4,
+        "indentation": 2,
         "no-descending-specificity": null
     }
 }
