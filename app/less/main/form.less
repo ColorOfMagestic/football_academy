@@ -3,82 +3,96 @@
     min-height: 1343px;
     background-image: url(../img/BG_form.jpg);
     background-size: cover;
+
     .sport-form_content {
       position: relative;
+
       .sport-form_title-wrapper {
         position: relative;
         top: 4rem;
         left: 64%;
+        display: block;
         width: 40%;
         min-height: 437px;
-        display: block;
         background-image: url(../img/BG_blob.png);
         background-repeat: no-repeat;
+
         .sport-form_title {
           position: absolute;
           top: 14%;
           left: 20%;
+
           span {
             display: block;
           }
         }
       }
+
       .sport-form_text {
         position: relative;
         left: 72%;
         width: 35%;
         padding-top: 11.625rem;
       }
+
       .sport-form_price {
         position: relative;
         left: 72%;
         display: block;
         padding-top: 3.125rem;
-        font-family: "Circe Rounded" ;
+        font-family: 'Circe Rounded', sans-serif;
+        font-size: 32px;
         font-style: normal;
         font-weight: normal;
-        font-size: 32px;
         line-height: 130%;
       }
     }
   }
 }
+
 @media (min-width: @mobile) and (max-width: @tablet) {
   .main-content {
     .sport-form {
       min-height: 660px;
       background-image: url(../img/girl_form.jpg);
-      background-size: cover;
       background-repeat: no-repeat;
       background-position-x: 30%;
+      background-size: cover;
+
       .sport-form_content {
         left: 0;
-        padding-top: 3rem;
         width: 100%;
+        padding-top: 3rem;
+
         .sport-form_title-wrapper {
-          min-height: 300px;
           top: 0;
           left: 0;
           width: 95%;
+          min-height: 300px;
           margin: 0 auto;
           background-image: none;
+
           .sport-form_title {
             left: 0;
             margin-top: 3rem;
             font-size: 3rem;
             line-height: 100%;
+            text-align: center;
+
             span {
               display: inline;
             }
           }
         }
-          .sport-form_text {
-            width: 100%;
-            left: 0;
-            padding-top: 0;
-            font-size: 2rem;
-            text-align: center;
+
+        .sport-form_text {
+          left: 0;
+          width: 100%;
+          padding: 0 3.5rem;
+          font-size: 2rem;
+          text-align: center;
         }
+
         .sport-form_price {
           left: 0;
           font-size: 1.25rem;
