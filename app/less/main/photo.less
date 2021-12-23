@@ -1,54 +1,100 @@
 .main-content {
- .photo-slider {
-   position: relative;
-  .photo-slider-slides {
-    .photo-slider-slide {
-      .photo-slider-slide_content {
-        position: relative;
-        .photo-slider-slide_content-title {
-          position: absolute;
-          top: 5.875rem;
-          left: 4.75rem;
-          z-index: 0;
-          &::before {
-            position: absolute;
-            top: -2.8125rem;
-            left: -2.1875rem;
-            content: "";
-            display: block;
-            width: 300px;
-            height: 235px;
-            background-image: url(../img/BG_blob_photos.png);
-            z-index: -1;
+  .photo {
+    position: relative;
+
+    .photo-title {
+      position: absolute;
+      top: 3.875rem;
+      left: 4.75rem;
+      z-index: 1;
+
+      &::before {
+        position: absolute;
+        top: -2.8125rem;
+        left: -2.1875rem;
+        z-index: -1;
+        display: block;
+        width: 300px;
+        height: 235px;
+        content: "";
+        background-image: url(../img/BG_blob_photos.png);
+      }
+    }
+
+    .photo-slider {
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+
+      .photo-slider-slides {
+        .photo-slider-slide {
+          .photo-slider-slide_content {
+            position: relative;
           }
+        }
+      }
+
+      .photo-slider_button-prev,
+      .photo-slider_button-next {
+        top: 40%;
+        width: 80px;
+        height: 80px;
+        background-color: @purple;
+        border: none;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: @beige;
+        }
+      }
+
+      .photo-slider_button-prev {
+        left: 40px;
+
+        &::after {
+          content: url(../img/hand_left_slider.svg);
+        }
+      }
+
+      .photo-slider_button-next {
+        right: 40px;
+
+        &::after {
+          content: url(../img/hand_right_slider.svg);
         }
       }
     }
   }
-  .photo-slider_button-prev,
-  .photo-slider_button-next {
-    width: 80px;
-    height: 80px;
-    top: 40%;
-    background-color: @purple;
-    border-radius: 50%;
-    border: none;
-    &:hover {
-      background-color: @beige;
-    }
-  }
-  .photo-slider_button-prev {
-    left: 40px;
-    &::after {
-      content: url(../img/hand_left_slider.svg);
-    }
-  }
-  .photo-slider_button-next {
-    right: 40px;
-    &::after {
-      content: url(../img/hand_right_slider.svg);
-    }
-  }
+}
 
- }
+@media (min-width: @mobile) and (max-width: @tablet) {
+  .main-content {
+    .photo {
+      .photo-title {
+        top: 1.6rem;
+        left: 1.3rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        line-height: 1rem;
+
+        &::before {
+          position: absolute;
+          top: -1.5rem;
+          left: -1rem;
+          z-index: -1;
+          width: 120px;
+          height: 95px;
+          content: "";
+          background-size: cover;
+        }
+      }
+
+      .photo-slider {
+        .photo-slider_button-prev,
+        .photo-slider_button-next {
+          display: none;
+        }
+      }
+    }
+  }
 }
