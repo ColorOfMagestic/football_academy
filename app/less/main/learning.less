@@ -1,52 +1,124 @@
 .main-content {
   .learning {
     background-color: @purple;
+
     .learning-title {
       padding: 7.5rem 0;
       text-align: center;
     }
+
     .learning-wrapper {
       display: flex;
       justify-content: center;
       padding-bottom: 10rem;
+
       .learning_img {
         border-radius: 20px;
       }
+
       .learning_content {
         padding-left: 2.5rem;
         font-size: 1.25rem;
         line-height: 1.25rem;
+
         .learning_content-text {
           padding-bottom: 2rem;
         }
+
         .learning_content-link {
           position: relative;
           display: block;
           padding-left: 4rem;
+
           &::before {
             position: absolute;
             top: -30%;
             left: 0;
-            content: "";
             display: block;
             width: 48px;
             height: 48px;
+            content: "";
           }
+
           &:not(:last-child) {
             padding-bottom: 1.75rem;
           }
+
           &:hover {
             color: @beige;
           }
-         }
+        }
+
         .phone-link {
           &::before {
-            background-image: url(../../img/tel.png);
+            background-image: url(../img/tel.png);
           }
         }
+
         .email-link {
           &::before {
-            background-image: url(../../img/mess.png);
+            background-image: url(../img/mess.png);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @mobile) and (max-width: @tablet) {
+  .main-content {
+    .learning {
+      .learning-title {
+        padding: 2.5rem 1.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: center;
+      }
+
+      .learning-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4rem;
+
+        .learning_img {
+          width: 90%;
+          margin: 0 auto 2rem;
+          border-radius: 20px;
+        }
+
+        .learning_content {
+          width: 90%;
+          padding-left: 0;
+          margin: 0 auto;
+          text-align: center;
+
+          .learning_content-link {
+            padding-left: 0;
+
+            &::before {
+              top: -10%;
+              left: 2.25rem;
+              display: block;
+              width: 24px;
+              height: 24px;
+              content: "";
+            }
+
+            &:not(:last-child) {
+              padding-bottom: 1.75rem;
+            }
+          }
+
+          .phone-link {
+            &::before {
+              background-size: cover;
+            }
+          }
+
+          .email-link {
+            &::before {
+              background-size: cover;
+            }
           }
         }
       }
