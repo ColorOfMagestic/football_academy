@@ -183,11 +183,9 @@
 
         .phone-link,
         .email-link {
-          padding-left: 4rem;
-
           &::before {
             top: -5%;
-            left: 5rem;
+            left: 3rem;
             background-size: cover;
           }
         }
@@ -216,6 +214,89 @@
 
       .map {
         width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .footer_adress {
+      text-align: center;
+
+      .footer_adress-span {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (min-width: @tablet) and (max-width: @laptop) {
+  .footer {
+    .footer-wrapper {
+      flex-direction: column;
+      padding: 2.5rem 0;
+
+      .footer_content {
+        order: 2;
+        margin-right: 0;
+
+        .footer_content-question {
+          justify-content: center;
+          padding-bottom: 1rem;
+
+          &::before {
+            top: -5%;
+            left: 7rem;
+            width: 2rem;
+            height: 2rem;
+            background-size: cover;
+          }
+        }
+
+        .footer_content-link {
+          justify-content: center;
+          padding-bottom: 1rem;
+
+          &::before {
+            position: absolute;
+            left: 0;
+            width: 2rem;
+            height: 2rem;
+            content: "";
+          }
+        }
+
+        .phone-link,
+        .email-link {
+          &::before {
+            top: -5%;
+            left: 7rem;
+            background-size: cover;
+          }
+        }
+
+        .footer_worktime {
+          display: flex;
+          justify-content: center;
+          padding-bottom: 2.5rem;
+          line-height: 1.25rem;
+          text-align: center;
+
+          &::before {
+            top: -5%;
+            left: 7rem;
+            width: 2rem;
+            height: 2rem;
+            background-size: cover;
+          }
+        }
+
+        .footer_btn {
+          min-width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+      .map {
         margin: 0 auto;
       }
     }
