@@ -256,3 +256,84 @@
   visibility: visible;
   opacity: 1;
 }
+
+@media (min-width: @mobile) and (max-width: @tablet) {
+  .modal {
+    .modal_wrapper {
+      width: 100%;
+      max-height: 100vh;
+
+      .modal_body {
+        .modal_content {
+          padding: 4rem 3rem;
+
+          .modal_content-title {
+            padding-top: 1.5rem;
+            font-size: 2rem;
+          }
+
+          .modal_content-text {
+            padding: 0;
+          }
+
+          .modal_form {
+            .form_label {
+              display: flex;
+
+              &:not(:last-child) {
+                padding-bottom: 1.5rem;
+              }
+
+              .form_input {
+                font-size: 1rem;
+              }
+
+              .select-wrapper {
+                &::before {
+                  top: 0.8rem;
+                  right: 2rem;
+                }
+
+                .form_select {
+                  font-size: 1rem;
+                }
+              }
+            }
+
+            .textarea-question {
+              font-size: 1rem;
+            }
+          }
+
+          .modal_form-submit {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+    .modal_wrapper-shipped {
+      width: 100%;
+      max-height: 100vh;
+
+      .modal_body {
+        .modal_content {
+          padding: 4rem 3rem;
+
+          .modal_content-title {
+            font-size: 2rem;
+          }
+
+          .modal_content-text {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
