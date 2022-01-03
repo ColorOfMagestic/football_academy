@@ -117,3 +117,48 @@
     }
   }
 }
+
+@media (min-width: @tablet) and (max-width: @laptop) {
+  .main-content {
+    .cafe {
+      .cafe_title {
+        padding: 4.5rem 0;
+        text-align: center;
+      }
+
+      .cafe-slider {
+        width: 65%;
+        padding-bottom: 5rem;
+        margin: auto;
+
+        .cafe-slider-sledes {
+          .cafe-slider-slide {
+            .cafe-slider-slide_title {
+              padding: 2.5rem;
+              padding-bottom: 1.5rem;
+              font-size: 1.5rem;
+              text-align: center;
+            }
+
+            .cafe-slider-slide_text {
+              max-width: 62.97%;
+              padding-bottom: 1rem;
+              padding-left: 3rem;
+              font-size: 1rem;
+              line-height: 1rem;
+            }
+
+            .cafe-slider-slide_img {
+              width: 25%;
+            }
+          }
+        }
+      }
+
+      .cafe-slider_button-prev,
+      .cafe-slider_button-next {
+        display: none;
+      }
+    }
+  }
+}
