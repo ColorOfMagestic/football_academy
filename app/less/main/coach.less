@@ -220,3 +220,75 @@
     }
   }
 }
+
+@media (min-width: @tablet) and (max-width: @laptop) {
+  .main-content {
+    .coach {
+      .coach-slider {
+        .coach-slider_slides {
+          .coach-slider_slide {
+            .coach_title {
+              padding: 4rem 0;
+            }
+
+            .coach_content-wrapper {
+              flex-direction: column;
+              padding-bottom: 2.5rem;
+
+              .coach_content {
+                order: 2;
+
+                .coach_content-name {
+                  margin: 0.6rem 0;
+                  text-align: center;
+                }
+
+                .tabs-wrapper {
+                  .tabs {
+                    justify-content: center;
+
+                    .label-tab {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      max-width: 45%;
+                      padding-left: 2.35rem;
+                      margin-top: 1rem;
+                      margin-bottom: 1.5rem;
+                      font-size: 1rem;
+
+                      &::before {
+                        top: 20%;
+                        left: 4%;
+                      }
+                    }
+
+                    .tabs-content {
+                      display: none;
+                      width: 100%;
+                      padding: 0 1.5rem;
+
+                      .tabs-content__item-text {
+                        font-size: 1.2rem;
+                        line-height: 120%;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .coach_content_img {
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+
+        .coach-slider_button-prev,
+        .coach-slider_button-next {
+          display: none;
+        }
+      }
+    }
+  }
+}
