@@ -138,3 +138,45 @@
     }
   }
 }
+
+@media (min-width: @tablet) and (max-width: @laptop) {
+  .main-content {
+    .price-shcool {
+      .price-shcool_title {
+        padding: 3.5rem 0;
+      }
+
+      .price-shcool_cards-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .price-shcool_card {
+          flex-basis: 45%;
+          margin-bottom: 2.5rem;
+
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+
+          &:first-child {
+            margin-right: auto;
+          }
+
+          .price-shcool_card-training {
+            padding-bottom: 4rem;
+          }
+        }
+      }
+
+      .price-shcool_button {
+        min-width: 80%;
+        margin: 1.5rem auto 1.5rem;
+        font-size: 1rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
