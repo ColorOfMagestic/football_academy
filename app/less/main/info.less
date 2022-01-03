@@ -1,46 +1,53 @@
 .main-content {
   .info {
     background-color: @blue;
+
     .info-block {
       display: flex;
       justify-content: space-between;
+
       .info-block_title {
         position: relative;
+        width: 33%;
         padding-top: 2rem;
         padding-left: 5rem;
-        width: 33%;
+
         &::before {
           position: absolute;
           top: 44px;
           left: 0;
-          content: "";
           display: block;
           width: 60px;
           height: 60px;
-          background-image: url(../../img/head_groups.png);
+          content: "";
+          background-image: url(../img/head_groups.png);
         }
       }
+
       .info-block_text {
         width: 30%;
       }
     }
   }
 }
-@media (min-width: @tablet) and (max-width: @laptop){
+
+@media (min-width: @tablet) and (max-width: @laptop) {
   .main-content {
     .info {
       .info-block {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         .info-block_title {
           width: 100%;
           font-size: 1.5rem;
+
           &::before {
             top: 1.2rem;
           }
-  
         }
+
         .info-block_text {
           width: 45%;
           font-size: 1rem;
@@ -50,41 +57,44 @@
     }
   }
 }
+
 @media (min-width: @mobile) and (max-width: @tablet) {
-    .main-content {
+  .main-content {
     .info {
       .info-block {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         .info-block_title {
           width: 100%;
-          font-size: 1.5rem;
-          text-align: center;
           padding: 0 1.5rem;
           padding-top: 3.5rem;
+          font-size: 1.5rem;
+          text-align: center;
+
           &::before {
             top: 15%;
             left: 45%;
-            background-size: 70%;
             background-repeat: no-repeat;
+            background-size: 70%;
           }
         }
+
         .info-block_text {
           width: 100%;
+          padding: 0 1.5rem;
           margin-top: 2rem;
           margin-bottom: 0;
-          padding: 0 1.5rem;
           font-size: 1rem;
           line-height: 1.2rem;
           text-align: center;
-          &:last-child{
+
+          &:last-child {
             padding-bottom: 2rem;
           }
         }
       }
     }
   }
-
-
 }
