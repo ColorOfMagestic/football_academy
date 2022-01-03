@@ -98,3 +98,35 @@
     }
   }
 }
+
+@media (min-width: @tablet) and (max-width: @laptop) {
+  .main-content {
+    .photo {
+      .photo-title {
+        top: 3rem;
+        left: 2rem;
+        z-index: 1;
+        font-size: 1.5rem;
+        line-height: 1rem;
+
+        &::before {
+          position: absolute;
+          top: -1.5rem;
+          left: -1rem;
+          z-index: -1;
+          width: 120px;
+          height: 95px;
+          content: "";
+          background-size: cover;
+        }
+      }
+
+      .photo-slider {
+        .photo-slider_button-prev,
+        .photo-slider_button-next {
+          display: none;
+        }
+      }
+    }
+  }
+}
