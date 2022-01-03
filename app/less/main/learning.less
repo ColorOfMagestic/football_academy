@@ -125,3 +125,61 @@
     }
   }
 }
+
+@media (min-width: @tablet) and (max-width: @laptop) {
+  .main-content {
+    .learning {
+      .learning-title {
+        padding: 2.5rem 1.5rem;
+        text-align: center;
+      }
+
+      .learning-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4rem;
+
+        .learning_img {
+          margin: 0 auto 2rem;
+          border-radius: 20px;
+        }
+
+        .learning_content {
+          width: 90%;
+          padding-left: 0;
+          margin: 0 auto;
+          text-align: center;
+
+          .learning_content-link {
+            padding-left: 0;
+
+            &::before {
+              top: -10%;
+              left: 6.5rem;
+              display: block;
+              width: 24px;
+              height: 24px;
+              content: "";
+            }
+
+            &:not(:last-child) {
+              padding-bottom: 1.75rem;
+            }
+          }
+
+          .phone-link {
+            &::before {
+              background-size: cover;
+            }
+          }
+
+          .email-link {
+            &::before {
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
