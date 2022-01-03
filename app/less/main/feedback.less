@@ -139,3 +139,53 @@
     }
   }
 }
+
+@media (min-width: @tablet) and (max-width: @laptop) {
+  .main-content {
+    .feedback {
+      .feedback_title {
+        padding: 4rem 0;
+        line-height: 32px;
+        text-align: center;
+      }
+
+      .feedback_cards-wrapper {
+        padding-bottom: 2.5rem;
+
+        .feedback_card {
+          padding: 1rem;
+          margin: 0;
+          margin-bottom: 1.5rem;
+
+          .feedback_card-text {
+            padding-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 120%;
+            text-align: center;
+          }
+
+          .feedback_card-autor {
+            .card-autor_content {
+              .autor_content-name {
+                font-size: 1.2rem;
+                line-height: 1;
+              }
+
+              .autor_content-text {
+                font-size: 0.8rem;
+                line-height: 120%;
+              }
+            }
+          }
+        }
+      }
+
+      .feedback-slider {
+        .feedback-slider_button-prev,
+        .feedback-slider_button-next {
+          display: none;
+        }
+      }
+    }
+  }
+}
